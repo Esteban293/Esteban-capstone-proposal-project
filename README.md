@@ -1,1 +1,1 @@
-# Esteban-capstone-proposal-project
+# Estebans-capstone-proposal-project
