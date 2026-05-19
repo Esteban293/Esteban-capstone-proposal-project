@@ -17,6 +17,56 @@
 </ul>
 
 <h1>Evbo</h1>
+
+<div class="images-container">
+  <div class="bg-layer active" id="bg1"></div>
+  <div class="bg-layer" id="bg2"></div>
+  
+  <!-- Put any text or buttons you want over the images here -->
+  <div class="content">
+    <h1>Your Title Here</h1>
+  </div>
+</div>
+
+<script>
+  // Array containing your exact image URLs
+  const imageUrls = [
+    'https://www.tpma-inc.com/wp-content/uploads/2023/10/shutterstock_1127599331-1.jpg',
+    'https://www.americanprogress.org/wp-content/uploads/sites/2/2024/03/GettyImages-1138452584.jpg?w=1680',
+    'https://imgproxy.divecdn.com/gxL8bS06HZt08qfINaofHmKv_Fcn9NtDbeNtDV72h2E/g:ce/rs:fill:1200:675:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNTcyNzYxNzIxLmpwZw==.webp',
+    'https://bsmknighterrant.org/wp-content/uploads/2026/05/R3bWASHzjnUsB9Q58zqRNF34l2ii52b0vqmf4d7Q-1200x895.png'
+  ];
+
+  let currentIndex = 0;
+  const layer1 = document.getElementById('bg1');
+  const layer2 = document.getElementById('bg2');
+
+  // Load initial backgrounds
+  layer1.style.backgroundImage = `url('${imageUrls[0]}')`;
+  layer2.style.backgroundImage = `url('${imageUrls[1]}')`;
+
+  function crossfadeImages() {
+    // Detect which layer is currently showing
+    const activeLayer = layer1.classList.contains('active') ? layer1 : layer2;
+    const hiddenLayer = activeLayer === layer1 ? layer2 : layer1;
+
+    // Get next image index
+    currentIndex = (currentIndex + 1) % imageUrls.length;
+
+    // Pre-load the next image onto the invisible layer so it doesn't flash
+    hiddenLayer.style.backgroundImage = `url('${imageUrls[currentIndex]}')`;
+
+    // Swap classes to trigger the CSS transition
+    activeLayer.classList.remove('active');
+    hiddenLayer.classList.add('active');
+  }
+
+  // Change image every 5 seconds (5000 milliseconds)
+  setInterval(crossfadeImages, 8000);
+</script>
+
+
+
 <h2>Dive into internships and school events—own your journey and maximize every single moment!</h2>
 
 
