@@ -90,3 +90,8 @@ h2{
   line-height: 80px;
 }
 
+.button1{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
