@@ -1,5 +1,3 @@
-
-
 h2, p {
   margin: 10px;
 }
@@ -10,8 +8,7 @@ ul {
   padding: 0;
   background-color: #333333;
   display: flex;
-  justify-content: center; 
-  list-style: none; 
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -30,21 +27,22 @@ ul li a.active {
   background-color: #04AA6D;
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
-h2{
+h2 {
   text-align: center;
   padding-top: 25px;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 40px;
   color: aliceblue;
 }
+
 .images-container {
   position: relative;
   width: 100%;
-  height: 420px; 
+  height: 420px;
   overflow: hidden;
   background-color: #000; /* Dark base ensures rich colors during blending */
 }
@@ -57,7 +55,7 @@ h2{
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   
   /* Hidden by default */
   opacity: 0;
@@ -71,7 +69,7 @@ h2{
 /* This class triggers the smooth fade-in and double-exposure blend */
 .bg-layer.active {
   opacity: 1;
-  mix-blend-mode: plus-lighter; 
+  mix-blend-mode: plus-lighter;
 }
 
 /* Keeps your content sitting perfectly on top of the images */
@@ -82,15 +80,15 @@ h2{
   padding: 20px;
 }
 
-.title{
+.title {
   background-color: rgb(4, 88, 161);
   line-height: 80px;
 }
 
-.button1{
+.button1 {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 /* General Page Styling */
