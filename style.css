@@ -45,7 +45,11 @@ h2 {
   height: 420px;
   overflow: hidden;
   background-color: #000; /* Dark base ensures rich colors during blending */
+  display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
+
 
 .bg-layer {
   position: absolute;
@@ -85,11 +89,7 @@ h2 {
   line-height: 80px;
 }
 
-.button1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 /* General Page Styling */
 body {
@@ -250,4 +250,18 @@ body {
   .event-action, .btn {
     width: 100%;
   }
+}
+
+.button1 {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100px;
+  font-size: 1.50rem;       /* Makes the text larger */
+  padding: 12px 24px;  
+}
+
+.button1 button{
+  font-size: 1.50rem;       /* Makes the text larger */
+  padding: 12px 24px;  
 }
