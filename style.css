@@ -263,5 +263,6 @@ body {
 
 .button1 button{
   font-size: 1.50rem;       /* Makes the text larger */
-  padding: 12px 24px;  
+  padding: 12px 24px; 
+  border-radius: 15px; 
 }
